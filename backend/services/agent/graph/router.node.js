@@ -56,9 +56,7 @@ Available agents:
 - chat
 - search
 - coding
-- pdf
-- ppt
-- image 
+
 
 Rules:
 
@@ -82,22 +80,14 @@ build projects,
 architecture,
 API design.
 
-pdf:
-Questions about generate PDFs
-or document context.
 
-ppt:
-Questions about generate ppts
-or ppt context.
 
 Return ONLY one word:
 
 chat
 search
 coding
-pdf
-ppt
-image
+
 
 
 User Query:
