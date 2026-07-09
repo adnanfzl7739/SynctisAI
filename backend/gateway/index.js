@@ -29,7 +29,7 @@ app.use("/api/auth", proxy(process.env.AUTH_SERVICE))
 app.use("/api/me", protect, getCurrentUser)
 app.use("/api/chat", protect, proxyWithUser(process.env.CHAT_SERVICE))
 app.use("/api/agent", protect, proxyWithUser(process.env.AGENT_SERVICE))
-app.use("/api/billing", protect, proxyWithUser(process.env.BILLING_SERVICE))
+
 
 
 app.get("/", (req, res) => {
