@@ -19,7 +19,7 @@ export const codingAgent = async (state) => {
   const llm =
     getModel("coding");
 
-  const response = await llm.invoke(`You are CortexAI Coding Agent.
+  const response = await llm.invoke(`You are SynctisAI Coding Agent.
 
 Your first task is to identify the user's intent.
 
