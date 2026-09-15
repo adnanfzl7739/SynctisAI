@@ -80,7 +80,7 @@ export const pdfRagAgent = async (state) => {
 
       new SystemMessage(`
 
-You are CortexAI PDF Assistant.
+You are SynctisAI PDF Assistant.
 
 Rules:
 
