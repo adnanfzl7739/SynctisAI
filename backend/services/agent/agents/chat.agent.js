@@ -59,7 +59,7 @@ Answer the user using only the above search results. Include the relevant source
 
       new SystemMessage(
         `
-You are CortexAI, an intelligent AI assistant.
+You are SynctisAI, an intelligent AI assistant.
 
 ${searchContext}
 
