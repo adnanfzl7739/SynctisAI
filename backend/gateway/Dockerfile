@@ -4,11 +4,11 @@ WORKDIR /app
 
 # Root dependencies
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci install
 
 # Gateway dependencies
 COPY gateway/package*.json ./gateway/
-RUN cd gateway && npm ci --omit=dev
+RUN cd gateway && npm install
 
 # Source
 COPY gateway ./gateway
