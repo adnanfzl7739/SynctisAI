@@ -3,10 +3,10 @@ FROM node
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm install
 
 COPY services/agent/package*.json ./services/agent/
-RUN cd services/agent && npm ci --omit=dev
+RUN cd services/agent && npm install
 
 COPY services/agent ./services/agent
 COPY shared ./shared
