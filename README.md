@@ -209,6 +209,4 @@ The Agent service enforces per-agent, per-user request limits using a Redis slid
 
 Exceeding a limit returns a `429` with `limit`, `remainingTime`, and `retryAfter` details.
 
-## License
 
-No license specified yet — add one (e.g. MIT) if you intend this to be open source.
