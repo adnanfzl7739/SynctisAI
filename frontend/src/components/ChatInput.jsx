@@ -244,6 +244,17 @@ export default function ChatInput({
     }
   };
 
+  
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) {
+      e.preventDefault();
+
+      if (isLoading || !value.trim()) return;
+
+      handleSend();
+    }
+  };
+
   return (
     <div className="w-full overflow-hidden px-3 md:px-5 py-4 border-t border-[#2A2A30] bg-[#121212]">
       <div className="flex flex-col gap-2 bg-[#1A1A1E] border border-[#2A2A30] rounded-2xl px-4 pt-3.5 pb-3">
@@ -412,6 +423,7 @@ ${isActive
         <textarea
           value={value}
           onChange={e => setValue(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder={
             placeholders[selectedAgent]
           }
